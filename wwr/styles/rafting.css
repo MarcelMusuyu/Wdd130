@@ -71,15 +71,15 @@ footer .wireframe {
     position: absolute;
     top: 110px;
     left: 150px;
-    background-color: var(--accent2-color);
-    opacity: 0.7;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    color: #ffffff;
 
     padding: 1rem;
 }
 
 .hero article h2 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 
@@ -87,6 +87,20 @@ footer .wireframe {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero>.hero-home {
+    display: block;
+    width: 100%;
+    height: 630px;
+}
+
+.hero>.hero-article {
+    margin-top: 250px;
+}
+
+.hero>.hero-title {
+    color: #ffffff;
 }
 
 .hero article img {
@@ -389,8 +403,8 @@ label {
 }
 
 form button {
-    background-color: #29323d;
-    border: 1px solid #29323d;
+    background-color: #0863b3;
+    border: 1px solid #0863b3;
     color: #f8f9fa;
     width: 20%;
     font-size: 1rem;
@@ -442,16 +456,81 @@ th small {
     color: var(--primary-color);
 }
 
-th button {
+
+
+
+
+th .button a {
     margin-top: 5px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 5px;
-    height: 40px;
+    width: 35%;
+    height: 25px;
+    padding-top: 5px;
+    text-decoration: none;
+
+    color: var(--nav-link-color);
+
 }
 
+.call-action,
+th .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
-th button a {
+
+
+}
+
+.call-action a {
+    width: 20%;
+    height: 30px;
+    background-color: #520506;
     text-decoration: none;
-    font-family: var(--heading-font);
-    color: var(--nav-link-color);
+    color: #ffffff;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* End of Trip Page CSS */
+
+/* Home Page CSS */
+.journey {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.journey img {
+    width: 100%;
+}
+
+.book-action {
+    padding: 20px;
+
+}
+
+.book-action a {
+    width: 30%;
+    height: auto;
+    background-color: #c52d2f;
+    text-decoration: none;
+    color: #ffffff;
+
+    font-size: 20px;
+    text-align: center;
+
+    cursor: pointer;
 }
