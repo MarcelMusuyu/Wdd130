@@ -33,7 +33,7 @@ h6 {
 
 header {
     font-family: var(--heading-font);
-    background-color: var(--accent1-color);
+
 }
 
 header h1,
@@ -46,21 +46,21 @@ p {
 }
 
 nav {
-    background-color: var(--nav-backgroud-color);
+
     font-size: 1.2rem;
     display: flex;
 }
 
 nav a {
     display: block;
-    color: var(--nav-link-color);
+    color: var(--primary-color);
     text-decoration: none;
     padding: 1rem;
 }
 
 nav a:link,
 nav a:visited {
-    color: var(--nav-link-color);
+    color: var(--primary-color);
 }
 
 nav a:hover {
