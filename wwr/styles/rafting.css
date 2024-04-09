@@ -373,6 +373,25 @@ form {
     align-items: center;
 }
 
+.news {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.news img {
+    width: 30%;
+    height: auto;
+}
+
+.news-form {
+    flex: 2 60%;
+}
+
 .user-contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -447,8 +466,7 @@ td img {
 }
 
 caption,
-figcaption,
-th small {
+figcaption {
     caption-side: top;
     padding: 5px;
 
@@ -456,6 +474,11 @@ th small {
     color: var(--primary-color);
 }
 
+th small {
+    font-size: 0.8rem;
+    color: #506a86;
+    font-style: var(--paragraph-font);
+}
 
 
 
